@@ -1,0 +1,211 @@
+\documentclass[10pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{textpos}
+%\usetheme{CambridgeUS}
+\usetheme{Madrid}
+\usecolortheme{crane}
+
+\begin{document}
+	%\author{}
+	%\title{}
+	%\subtitle{}
+	%\logo{}
+	%\institute{}
+	%\date{}
+	%\subject{}
+	%\setbeamercovered{transparent}
+	%\setbeamertemplate{navigation symbols}{}
+\include{slides}
+
+\begin{frame}[t]{Outline}\label{s2}
+\begin{itemize}
+	\item{Introduction }
+	\item{ F.A.R.M. Mechanism}
+	\item{Literature Survey}
+	\item{Hardware Requirements}
+	\item{Project Description }
+	\item{Software Requitements}
+	\item{Implementation}
+	\item{References}
+
+\end{itemize}
+\end{frame}
+%2
+%\begin{frame}[t]{Project Keywords}\label{s3}
+%% Power of derivative or integration as \\Real numbers, Real fractional number and Complex number.\pause
+%
+%\begin{itemize}
+%\item  SDG
+%\item zero human intervention.
+%\item autonomous system.
+%\item effective farming.
+%\item eyic 2019-20
+%\item smart farming.
+%\item multifunctional arm.
+%
+%
+%
+%%\begin{figure}
+%	%\centering
+%%	\includegraphics[width=0.9\linewidth]{Basic_block.jpg}
+%%\end{figure}
+%
+%
+%
+%\end{itemize}
+%\end{frame}
+%%%%%%%%%%%%%%%%%%%% 3 %%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t]{ Introduction }\label{s2}
+\begin{itemize}
+\item{ yields obtained by traditional technique of farming are not proportional to the input of farmers labor and hard work. }
+\item{Thus, sophisticated farming is the need of hour. }
+\item{ we all know it's all all about enhancing technology for better productivity at minimal labor therefore we have proposed a project which is fully automated agricultural bot called as \alert{F.A.R.M.}}
+\item{ This project strives to develop a robot capable of performing operations like automatic ploughing, seed dispensing, weed plucking, auto watering,harvesting.}
+\item{It also keeps a track on the humidity, moisture and temperature with the help of sensors.}
+\item{This robot has an arm which includes flexible movements for the purpose which also excludes various limitations.
+	}
+
+\end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%% 4 %%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t]{ F.A.R.M. Mechanism}
+	\begin{figure}
+		\includegraphics[width=0.7\linewidth]{FARMmech.png}
+		\caption{F.A.R.M. Mechanism}
+	
+	\end{figure}  
+\end{frame}
+%%%%%%%%%%%%%%%%%%%% 5 %%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}[t]{ Literature Survey
+		}\label{s2}
+\begin{itemize}
+\item The research also says that  laborer?s available for farming and people actually indulging themselves in workforce farming. It shows that with the help of increasing technology workforce required is considerably reduced and that time can be efficiently invested in other relevant ways of earning. 
+
+\item Technologies which might have zero human interventions and turnout to be profitable with reduced labor, efforts, time and meet the needs of the population
+\item According to the survey expected automation and technology advancement in agriculture includes 
+
+
+\begin{itemize}
+\item Unmanned Spraying Helicopters
+\item Agricultural Drone(Multi-functional)
+\item Agricultural Drone(Data Service)
+\item Robotic Implements(Simple Vision Tech For Organic Farms)
+\item Robotic Intelligent Implements(Weeding)
+\item Robotic Fresh Fruit Picking
+\item Autonomous Tractors
+\item Autonomous Agricultural Small Bots(Multi-functional)
+
+\end{itemize}
+
+
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%% 6 %%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[t]{Hardware Requirements
+		}\label{s2}
+\begin{itemize}
+
+
+
+\item  R-pi
+\item   Mono rail mechanism
+\item    R-pi camera
+ \item   Stepper motor,
+\item         stepper motor driver
+\item  Acrylic sheets
+\item       Water pumping motor
+\item       Grippers
+ 
+
+
+
+
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%% 7 %%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[t]{Project Description}\label{s2}
+\begin{figure}
+\includegraphics[width=0.99\linewidth]{H.png}
+\caption{Project Description.}
+\label{fig:mriimage21}
+\end{figure} 
+
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%% 7 %%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[t]{Software Requitements}\label{s2}
+\begin{itemize}
+
+
+
+\item   R.O.S
+\item     OPEN CV                                                                                   
+\item     Fusion 360
+\item      Python
+\item      R Viz
+\item      Gazebo
+
+
+
+
+
+
+
+
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%% 8 %%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[t]{Implementation}\label{s2}
+\begin{itemize}
+\item{Once we start the F.A.R.M. it will first collect all its data get an update about in which phase it is working and at what phase it has ended and also from which co-ordinate it has to start i.e. sowing ,watering, weeding etc. It will start its path planning and also go to its saved co-ordinates from where it has to resume its work.
+	}
+\item{It will take a dry run and take images using open-CV and also take corresponding decision if decision says seeding then it performs seeding and it will perform this task till it is competed ,same goes for watering and harvesting and all of this is done using scheduling .
+	}
+\item{The task of watering starts after completion of sowing /seeding and performs the particular task at scheduled time till it is completed ,followed by the weeding process. This is done after weed detection.
+	}
+\item{ It also performs an analysis after every task about which task to be performed which is in synchronous to the scheduling. }
+
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%% 9 %%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t]{ Implementation
+	}\label{s2}
+	\begin{figure}
+		\includegraphics[width=0.9\linewidth]{FLOWCHART.png}
+		\caption{F.A.R.M  IMPLEMENTATION} 
+		\label{fig:mriimage21}
+	\end{figure}  
+\end{frame}
+
+\begin{frame}[t]{References}\label{s2}
+\begin{itemize}
+\item  "Agriculture Robots At The University Of Sydney". 
+\item  "Thorvald – Autonomous Modular Robot Delivering Agricultural Services".
+\item  "Fields Of Automation". The Economist. Retrieved 2018-05-29.
+\item "From Strawberries To Apples, A Wave Of Agriculture Robotics May Ease The Farm Labor Crunch".
+\item  "Products". Harvest Automation. 2016. Retrieved 10 November 2014.
+\item "Agbot Multi-Function Robot Is Powered By The Sun"
+\item  "Agbot Multi-Function Robot Is Powered By The Sun"
+\item  "Farmbot - Open-Source Cnc Farming". 
+\item  "Farmbot Diy Agriculture Robot Promises To Usher In The Future Of \item Farming". Digitaltrends.Com. 28 July 2016. Retrieved 2 April 2018.
+\item  "Agriculture Robots At The University Of Sydney". 2016.
+
+
+\end{itemize}
+\end{frame}
+
+\end{document}
